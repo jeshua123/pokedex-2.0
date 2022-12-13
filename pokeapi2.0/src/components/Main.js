@@ -1,17 +1,16 @@
-import React from 'react';
-import  imagen  from "../assets/images/foto.jpeg";
+import React, { useState } from 'react';
+import imagen from "../assets/images/foto.jpeg";
+import Modal from './Modal';
+
+
 const Main = () => {
 
-
-
-    
+  const [showmodal, setshowmodal] = useState(false)
   
   return (
-    <div className="cards">
+    <div className="cards" >
 
-      <div className="card" onClick={() => {
-        
-      }} >
+      <div onClick={() => { setshowmodal(true) }}  className="card"  >
         <div className="card-info">
           <p className="poke-number"> 123</p>
           <p className="poke-name">nombre Pokemon</p>
@@ -20,16 +19,19 @@ const Main = () => {
         
         </div>
         <div className="card-image"><img className="card-img" src={imagen} alt="" /></div>
-   
+
+       <Modal/>
       </div>
       
       <div className="card"></div>
       <div className="card"></div>
       <div className="card"></div>
-      <div className="card"></div>
+      <div className="modal" ></div>
+
     </div>
-    
+   
   );
+  
 }
 
 export default Main;
