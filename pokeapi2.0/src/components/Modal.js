@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-
-function Modal() {
+function Modal({ setshowmodal }) {
   
   
-
+  const handleClick = () => {
+    setshowmodal(false)
+  }
 
   return (
 <>   
-      <div className="div-mod" >
+      <div onClick={() => {handleClick()}} className="div-mod" >
         <div className="mod-content" >
-          <span className="close"></span>
-          <p>Some text in the Modal..</p>
+       <p># 123</p>
+          <p>pokemon name</p>
         </div>
   
       </div>

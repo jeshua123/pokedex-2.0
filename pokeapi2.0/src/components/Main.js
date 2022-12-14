@@ -20,8 +20,8 @@ const Main = () => {
         </div>
         <div className="card-image"><img className="card-img" src={imagen} alt="" /></div>
 
-       <Modal/>
       </div>
+        {showmodal && <Modal setshowmodal={setshowmodal} />}
       
       <div className="card"></div>
       <div className="card"></div>
