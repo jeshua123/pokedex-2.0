@@ -16,7 +16,7 @@ function Modal({ setshowmodal }) {
             <p>pokemon name</p>
           </div>
           <div className="mod-section-3">
-            <img src="https://api.lorem.space/image/face?w=150&amp;amp;amp;amp;h=220" alt="" />
+            <img className="img-card-mod" src="https://api.lorem.space/image/face?w=150&amp;amp;amp;amp;h=220" alt="" />
           </div>
           <div className="mod-section-4">
             <nav>
@@ -27,6 +27,7 @@ function Modal({ setshowmodal }) {
             </nav>
           </div>
           <div className="mod-section-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusantium a recusandae ipsam laborum?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusantium a recusandae ipsam laborum?</p>
           </div>
           <div className="mod-section-6"></div>
