@@ -6,7 +6,7 @@ import Modal from './Modal';
 const Main = () => {
 
   const [showmodal, setshowmodal] = useState(false)
-  console.log(showmodal);
+
   return (
     <div className="cards" >
 
