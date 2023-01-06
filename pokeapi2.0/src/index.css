@@ -264,13 +264,15 @@ h1 {
 }
 
 .mod-content {
-  width: 90%;
-  height: 98%;
+  width: 80%;
+  height: 80%;
   border-radius: 3%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 8% 15% 15% 6% 1fr 1fr;
   gap: 2px;
+    background-color: #f9f2f2;
+
 }
 
 .mod-section-1 {
@@ -288,11 +290,9 @@ h1 {
 .mod-section-3 {
   background-color: #1121af;
   grid-area: 2/2/4/3;
-
 }
 
 .mod-section-4 {
-
   grid-column: span 2;
 }
 
@@ -334,7 +334,7 @@ a:nth-child(1) {
 }
 
 a:nth-child(2) {
-  width: 110px;
+  width: 100px;
 }
 
 a:nth-child(3) {
@@ -383,14 +383,23 @@ width: 100%;
 height: 100%;
 object-fit: cover;
 }
-.mod-section-5 {
-  background-color: #e00404;
-  grid-column: span 2;
-}
-.mod-section-5 p {
-  color: #0a0404;
-font-size: 7px;}
+/* section 5 pokedex Data Table */
 
+.mod-section-5 {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+table{
+ background-color: rgb(125, 116, 116);
+ font-size: 8px;
+ min-width: 100%;
+ height:60%;
+  
+}
+
+/* section 5 pokedex Data Table end */
 
 .mod-section-6 {
   background-color: #119aaf;

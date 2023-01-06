@@ -1,3 +1,5 @@
+import PokedexDataTable from "./PokedexDataTable"
+
 function Modal({ setshowmodal }) {
 
 
@@ -23,12 +25,11 @@ function Modal({ setshowmodal }) {
               <a href="1">About</a>
               <a href="2">Base Stats</a>
               <a href="3">Evolution</a>
-              <div class="animation start-home"></div>
+              <div className="animation start-home"></div>
             </nav>
           </div>
           <div className="mod-section-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusantium a recusandae ipsam laborum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusantium a recusandae ipsam laborum?</p>
+            < PokedexDataTable />
           </div>
           <div className="mod-section-6"></div>
 
