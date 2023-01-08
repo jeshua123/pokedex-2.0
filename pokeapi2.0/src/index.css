@@ -271,7 +271,8 @@ h1 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 8% 15% 15% 6% 1fr 1fr;
   gap: 2px;
-    background-color: #f9f2f2;
+  background-color: #fff;
+ 
 
 }
 
@@ -284,20 +285,22 @@ h1 {
 /* .mod-section-1-info{
 } */
 .mod-section-2 {
-  background-color: #af118a;
+/*   background-color: #af118a; */
 }
 
 .mod-section-3 {
-  background-color: #1121af;
+
   grid-area: 2/2/4/3;
 }
 
 .mod-section-4 {
   grid-column: span 2;
+ 
 }
 
 /* nav bar */
 nav {
+  margin-top: 10px ;
   position: relative;
   width: 100%;
   height: 100%;
@@ -389,21 +392,28 @@ object-fit: cover;
   grid-column: span 2;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.pokemon-description{
+font-size:7px ;
 }
 table{
- background-color: rgb(125, 116, 116);
  font-size: 8px;
- min-width: 100%;
- height:60%;
-  
+ width: 100%;
+}
+ table td {
+  text-align: right;
 }
 
 /* section 5 pokedex Data Table end */
 
 .mod-section-6 {
-  background-color: #119aaf;
   grid-column: span 2;
+    display: flex;
+  flex-direction: column;
+ gap: 5px;
+
 }
 
 /* modal */

@@ -1,4 +1,5 @@
 import PokedexDataTable from "./PokedexDataTable"
+import TrainingTable from "./TrainingTable"
 
 function Modal({ setshowmodal }) {
 
@@ -31,7 +32,9 @@ function Modal({ setshowmodal }) {
           <div className="mod-section-5">
             < PokedexDataTable />
           </div>
-          <div className="mod-section-6"></div>
+          <div className="mod-section-6">
+            <TrainingTable />
+          </div>
 
         </div>
 

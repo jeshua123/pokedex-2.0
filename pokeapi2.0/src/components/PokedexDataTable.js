@@ -3,6 +3,9 @@ import React from 'react'
 function PokedexDataTable() {
   return (
     <>
+      <p className='pokemon-description'>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil laudantium at eveniet quis!
+      </p>
       <h3>Pokedex Data</h3>
       <table  >
         <tbody>
