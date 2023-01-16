@@ -30,9 +30,14 @@ function Modal({ setshowmodal }) {
             </nav>
           </div>
           <div className="mod-section-5">
-            < PokedexDataTable />
+            <p className='pokemon-description'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil laudantium at eveniet quis!
+            </p>
           </div>
           <div className="mod-section-6">
+            < PokedexDataTable />
+          </div>
+          <div className="mod-section-7">
             <TrainingTable />
           </div>
 
