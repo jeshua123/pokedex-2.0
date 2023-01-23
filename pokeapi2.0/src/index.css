@@ -276,19 +276,19 @@ h1 {
   padding: 0 7px;
   background: linear-gradient(
     to bottom,
-    pink 0%,
-    rgb(200, 255, 192) 50%,
+    rgb(192, 255, 217) 0%,
+    rgb(8, 165, 0) 50%,
     rgb(249, 252, 252) 50%,
     rgb(231, 238, 238) 100%
   );
 }
+
+
+
+
 h3{
   color:#19d1ac
 }
-
-
-
-
 /* .mod-section-1-info{
 } */
 .mod-section-1 {
@@ -425,7 +425,7 @@ font-size:7px ;
 }
 table{
  font-size: 8px;
- width: 100%;
+ width: 280px;
 }
  table td {
   text-align: right;
@@ -438,6 +438,29 @@ table{
     display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+}
+
+
+@media only screen 
+   and (min-width : 800px) {
+
+.mod-content {
+
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 6% 42% 22% 22%;
+padding: 1rem;
+
+}
+.mod-section-1 { grid-area: 1 / 1 / 2 / 5; }
+.mod-section-2 { grid-area: 2 / 1 / 3 / 3; }
+.mod-section-3 { grid-area: 2 / 3 / 3 / 5;}
+.mod-section-4 { display: none;}
+.mod-section-5 { grid-area: 3 / 2 / 4 / 3; }
+.mod-section-6 { grid-area: 3 / 1 / 4 / 2;place-content:space-around ;}
+.mod-section-7 { grid-area: 4 / 1 / 5 / 2;}
+
 
 }
 
