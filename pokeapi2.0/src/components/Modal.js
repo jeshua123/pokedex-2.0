@@ -17,6 +17,8 @@ function Modal({ setshowmodal }) {
           <div className="mod-section-2">
             <p># 123</p>
             <p>name</p>
+            <button type='button' className="button-poke-categorie">water</button>
+            <button type='button' className="button-poke-categorie">fire</button>
           </div>
           <div className="mod-section-3">
             <img className="img-card-mod" src="https://api.lorem.space/image/face?w=150&amp;amp;amp;amp;h=220" alt="" />
