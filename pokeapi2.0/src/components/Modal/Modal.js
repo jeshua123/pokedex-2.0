@@ -1,7 +1,12 @@
-import PokedexDataTable from "./PokedexDataTable"
-import TrainingTable from "./TrainingTable"
+import React, { useState } from 'react';
+import PokedexDataTable from "../Modal/PokedexDataTable"
+import TrainingTable from "../Modal/TrainingTable"
+import BaseStats from "./BaseStats"
+
+
 
 function Modal({ setshowmodal }) {
+  const [menuDisplay, setmenuDisplay] = useState(false);
 
 
   const handleClick = () => {
@@ -31,18 +36,24 @@ function Modal({ setshowmodal }) {
               <div className="animation start-home"></div>
             </nav>
           </div>
-          <div className="mod-section-5">
-            <p className='pokemon-description'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil laudantium at eveniet quis!
-            </p>
+          {menuDisplay &&
+            <>
+              <div className="mod-section-5">
+                <p className='pokemon-description'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil laudantium at eveniet quis!
+                </p>
+              </div>
+              <div className="mod-section-6">
+                < PokedexDataTable />
+              </div>
+              <div className="mod-section-7">
+                <TrainingTable />
+              </div>
+            </>
+          }
+          <div className="baseStats-div">
+            <BaseStats />
           </div>
-          <div className="mod-section-6">
-            < PokedexDataTable />
-          </div>
-          <div className="mod-section-7">
-            <TrainingTable />
-          </div>
-
         </div>
 
       </div>

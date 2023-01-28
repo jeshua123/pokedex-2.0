@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import imagen from "../assets/images/foto.jpeg";
-import Modal from './Modal';
+import Modal from '../components/Modal/Modal';
 
 
 const Main = () => {
