@@ -1,12 +1,13 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import React, { useState } from 'react';
-import PokedexDataTable from "../Modal/PokedexDataTable"
-import TrainingTable from "../Modal/TrainingTable"
+import PokedexDataTable from "./PokedexDataTable"
+import TrainingTable from "./TrainingTable"
 import BaseStats from "./BaseStats"
 
 
 
 function Modal({ setshowmodal }) {
-  const [menuDisplay, setmenuDisplay] = useState(false);
+  const [menuDisplay, setmenuDisplay] = useState(true);
 
 
   const handleClick = () => {
@@ -29,12 +30,20 @@ function Modal({ setshowmodal }) {
             <img className="img-card-mod" src="https://api.lorem.space/image/face?w=150&amp;amp;amp;amp;h=220" alt="" />
           </div>
           <div className="mod-section-4">
-            <nav>
-              <a href="1">About</a>
-              <a href="2">Base Stats</a>
-              <a href="3">Evolution</a>
-              <div className="animation start-home"></div>
-            </nav>
+            <BrowserRouter>
+              <nav>
+                <a href="1">About</a>
+                <a href="2">Base Stats</a>
+                <a href="3">Evolution</a>
+                <div className="animation start-home"></div>
+              </nav>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/modal" element={<Modal />}>
+                </Route>
+              </Routes>
+            </BrowserRouter>
+
           </div>
           {menuDisplay &&
             <>
@@ -57,6 +66,7 @@ function Modal({ setshowmodal }) {
         </div>
 
       </div>
+
     </>
   )
 }
