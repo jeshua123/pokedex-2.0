@@ -1,41 +1,13 @@
-import React, { useState } from 'react';
-import imagen from "../assets/images/foto.jpeg";
-import Modal from '../components/Modal/Modal';
-
+import React from 'react';
+import Card from './Card';
 
 const Main = () => {
-
-  const [showmodal, setshowmodal] = useState(false)
   return (
-    <>
-
-      <div className="cards" >
-
-        <div onClick={() => { setshowmodal(true) }} className="card"  >
-          <div className="card-info">
-            <p className="poke-number"> 123</p>
-            <p className="poke-name">nombre Pokemon</p>
-            <div className="
-            ">
-              <button type='button' className="button-poke-categorie">water</button>
-              <button type='button' className="button-poke-categorie">fire</button>
-            </div>
-
-
-          </div>
-        </div>
-        <div className="card-image"><img className="card-img" src={imagen} alt="" /></div>
-
-      </div>
-      {showmodal && <Modal setshowmodal={setshowmodal} />}
-
-      <div className="card"></div>
-      <div className="card"></div>
-      <div className="card"></div>
-      <div className="modal" ></div>
-
-    </>
-
+    <div className="cards" >
+      <Card />
+      <Card />
+      <Card />
+    </div>
   );
 
 }

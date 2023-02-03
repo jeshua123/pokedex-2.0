@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import React, { useState } from 'react';
 import PokedexDataTable from "./PokedexDataTable"
 import TrainingTable from "./TrainingTable"
@@ -30,20 +30,12 @@ function Modal({ setshowmodal }) {
             <img className="img-card-mod" src="https://api.lorem.space/image/face?w=150&amp;amp;amp;amp;h=220" alt="" />
           </div>
           <div className="mod-section-4">
-            <BrowserRouter>
-              <nav>
-                <a href="1">About</a>
-                <a href="2">Base Stats</a>
-                <a href="3">Evolution</a>
-                <div className="animation start-home"></div>
-              </nav>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/modal" element={<Modal />}>
-                </Route>
-              </Routes>
-            </BrowserRouter>
-
+            <nav>
+              <a href="1">About</a>
+              <a href="2">Base Stats</a>
+              <a href="3">Evolution</a>
+              <div className="animation start-home"></div>
+            </nav>
           </div>
           {menuDisplay &&
             <>
