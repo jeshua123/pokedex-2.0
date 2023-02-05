@@ -37,30 +37,6 @@ function PokedexDataTable() {
           </tr>
         </tbody>
       </table>
-      {/* <div className="stats-div ">
-        <p>Cathegorie</p>
-        <p>Seed pokemon</p>
-      </div>
-      <div className="stats-div">
-        <p>Weight</p>
-        <p>xxxx</p>
-      </div>
-      <div className="stats-div">
-        <p>Height</p>
-        <p>Seed pokemon</p>
-      </div>
-      <div className="stats-div">
-        <p>Captura Rate</p>
-        <p>Seed pokemon</p>
-      </div>
-      <div className="stats-div">
-        <p>Weakenesses</p>
-        <p>Seed pokemon</p>
-      </div>
-      <div className="stats-div">
-        <p>Abilities</p>
-        <p>Seed pokemon</p>
-      </div> */}
 
 
     </>

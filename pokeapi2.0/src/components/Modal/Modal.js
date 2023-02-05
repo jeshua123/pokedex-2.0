@@ -1,22 +1,11 @@
-
-import React, { useState } from 'react';
 import PokedexDataTable from "./PokedexDataTable"
 import TrainingTable from "./TrainingTable"
 import BaseStats from "./BaseStats"
 
-
-
-function Modal({ setshowmodal }) {
-  const [menuDisplay, setmenuDisplay] = useState(true);
-
-
-  const handleClick = () => {
-    setshowmodal(false)
-  }
-
+function Modal() {
   return (
     <>
-      <div onClick={() => { handleClick() }} className="div-mod" >
+      <div onClick={""} className="div-mod" >
         <div className="mod-content" >
           <div className="mod-section-1">
           </div>
@@ -37,21 +26,19 @@ function Modal({ setshowmodal }) {
               <div className="animation start-home"></div>
             </nav>
           </div>
-          {menuDisplay &&
-            <>
-              <div className="mod-section-5">
-                <p className='pokemon-description'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil laudantium at eveniet quis!
-                </p>
-              </div>
-              <div className="mod-section-6">
-                < PokedexDataTable />
-              </div>
-              <div className="mod-section-7">
-                <TrainingTable />
-              </div>
-            </>
-          }
+          <>
+            <div className="mod-section-5">
+              <p className='pokemon-description'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil laudantium at eveniet quis!
+              </p>
+            </div>
+            <div className="mod-section-6">
+              < PokedexDataTable />
+            </div>
+            <div className="mod-section-7">
+              <TrainingTable />
+            </div>
+          </>
           <div className="baseStats-div">
             <BaseStats />
           </div>

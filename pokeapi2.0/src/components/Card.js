@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
 import Modal from './Modal/Modal'
 import imagen from '../assets/images/foto.jpeg'
+import { Routes, Route, Link } from "react-router-dom";
 
 function Card() {
-  const [showmodal, setshowmodal] = useState(false)
   return (
     <>
       <div className="cards" >
-        <div onClick={() => { setshowmodal(true) }} className="card"  >
+        <div onClick={""} className="card"  >
           <div className="card-info">
-            <p className="poke-number"> 123</p>
+            <Link to="/modal">
+              <p className="poke-number"> 123</p>
+            </Link>
             <p className="poke-name">nombre Pokemon</p>
             <div className="">
               <button type='button' className="button-poke-categorie">water</button>
@@ -17,7 +18,11 @@ function Card() {
             </div>
           </div>
           <div className="card-image"><img className="card-img" src={imagen} alt="" /></div>
-          {showmodal && <Modal setshowmodal={setshowmodal} />}
+
+          <Routes>
+            <Route path='/modal' element={<Modal />} />
+
+          </Routes>
         </div>
       </div>
     </>
