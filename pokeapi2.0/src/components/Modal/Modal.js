@@ -1,6 +1,7 @@
 import PokedexDataTable from "./PokedexDataTable"
 import TrainingTable from "./TrainingTable"
 import BaseStats from "./BaseStats"
+import { Routes, Route, Link } from "react-router-dom";
 
 function Modal() {
   return (
@@ -26,22 +27,26 @@ function Modal() {
               <div className="animation start-home"></div>
             </nav>
           </div>
-          <>
-            <div className="mod-section-5">
-              <p className='pokemon-description'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil laudantium at eveniet quis!
-              </p>
-            </div>
-            <div className="mod-section-6">
-              < PokedexDataTable />
-            </div>
-            <div className="mod-section-7">
-              <TrainingTable />
-            </div>
-          </>
-          <div className="baseStats-div">
-            <BaseStats />
+
+          <div className="mod-section-5">
+            <p className='pokemon-description'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil laudantium at eveniet quis!
+            </p>
           </div>
+          <Routes>
+            <Route path="/" element={
+              <>
+
+                <div className="mod-section-6"> < PokedexDataTable /></div>
+                <div className="mod-section-7"> < TrainingTable /></div>
+
+              </>
+            } />
+            <Route path="/modal/1" element={<div className="mod-section-7"> < TrainingTable /></div>} />
+            <Route path="/modal/2" element={<div className="baseStats-div"> < BaseStats /></div>} />
+          </Routes>
+
+
         </div>
 
       </div>

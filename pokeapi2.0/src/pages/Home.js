@@ -1,16 +1,16 @@
 import React from 'react'
 import Header from '../components/Header'
- import Main from '../components/Main' 
+import PokemonList from '../components/PokemonList'
 
 
 function Home() {
   return (
     <>
       <Header />
-      <Main /> 
+      <PokemonList />
     </>
 
-)
+  )
 }
 
 export default Home
