@@ -1,12 +1,14 @@
 import React from 'react';
-import Card from './Card';
+import PokemonCard from './PokemonCard';
+
 
 const PokemonList = () => {
   return (
-    <div className="cards" >
-      <Card />
-      <Card />
-      <Card />
+    <div className="pokemon-cards-grid" >
+      <PokemonCard />
+      <PokemonCard />
+      <PokemonCard />
+
 
     </div>
   );

@@ -203,7 +203,7 @@ h1 {
 /* end of header */
 
 /* main */
-.cards {
+.pokemon-cards-grid {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
