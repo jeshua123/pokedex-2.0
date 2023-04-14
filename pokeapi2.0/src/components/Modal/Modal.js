@@ -1,5 +1,5 @@
 
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Modal() {
   return (
@@ -31,9 +31,6 @@ function Modal() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil laudantium at eveniet quis!
             </p>
           </div>
-
-          <Outlet />
-
         </div>
 
       </div>
