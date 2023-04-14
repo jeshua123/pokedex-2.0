@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 import imagen from '../assets/images/foto.jpeg'
-import Modal from './Modal/Modal'
+
 
 function PokemonCard() {
 
   return (
     <>
-      <Link to={<Modal />}>
+      <Link to="/modal">
         <div className="card"  >
           <div className="card-info">
             <p className="poke-number"> 123</p>
@@ -19,6 +19,8 @@ function PokemonCard() {
           <div className="card-image"><img className="card-img" src={imagen} alt="" /></div>
         </div>
       </Link>
+
+
     </>
   )
 }
