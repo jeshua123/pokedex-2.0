@@ -251,7 +251,16 @@ h1 {
 
 }
 
-/* modal */
+/*//////////////////////////// modal ////////////////////////*/
+.PokemonStatsCard{
+  height: 200px;
+  width: 150px;
+  background-color: #ffe167;
+  border-radius: 5%;
+}
+
+
+
 .div-mod {
   width: 100vw;
   height: 100vh;

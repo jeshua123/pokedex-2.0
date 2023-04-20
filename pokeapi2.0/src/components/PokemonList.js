@@ -1,13 +1,13 @@
 import React from 'react';
-import PokemonCard from './PokemonCard';
-
+/* import PokemonCard from './PokemonCard';
+ */
 
 const PokemonList = () => {
   return (
     <div className="pokemon-cards-grid" >
+      {/*       <PokemonCard />
       <PokemonCard />
-      <PokemonCard />
-      <PokemonCard />
+      <PokemonCard /> */}
 
 
     </div>
